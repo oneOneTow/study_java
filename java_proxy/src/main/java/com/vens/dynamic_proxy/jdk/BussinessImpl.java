@@ -1,4 +1,4 @@
-package com.vens.dynamic_proxy;
+package com.vens.dynamic_proxy.jdk;
 
 /**
  * @author LuZhiqing
