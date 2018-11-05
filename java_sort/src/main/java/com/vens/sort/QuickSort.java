@@ -29,16 +29,26 @@ public class QuickSort {
         int j=high;
         int baseValue=arr[low];
         while(i!=j){
-            while(baseValue<arr[j]&&j>0){
-                j--;
+            while(i<j){
+                if(baseValue<arr[j]){
+                    j--;
+                }else {
+                    swap(arr,i,j);
+                    i++;
+                    break;
+                }
+
             }
-            swap(arr,i,j);
-            i++;
-            while(baseValue>arr[i]&&i<j){
-                i++;
+            while(i<j){
+                if(baseValue>arr[i]){
+                    i++;
+                }else{
+                    swap(arr,i,j);
+                    j--;
+                    break;
+                }
             }
-            swap(arr,i,j);
-            j--;
+
         }
         return j;
     }
