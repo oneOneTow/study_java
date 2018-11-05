@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>java_proxy</module>
+        <module>java_extends</module>
+        <module>java8_feature</module>
+        <module>java_set</module>
+        <module>java_sort</module>
     </modules>
 
 
