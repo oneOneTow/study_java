@@ -14,15 +14,20 @@ public class QuickSort {
      * 3.然后又从左向右移动，动作是如果arr[i]<baseValue,继续比较arr[i],如果baseValue<arr[i],就交换arr[i]和arr[j]
      * 4.再重复2.3步骤，直到i==j。
      * 经过上面5步得到position,然后递归对position左边数组进行排序，对position右边数组进行排序
+     * 时间复杂度：
+     *          最好：O(nlogn)
+     *          平均：O(nlogn)
+     *          最差：O(n*n)
+     * 稳定性：
+     *          非稳定排序
      * @return
      */
-    public static int[] sort(int [] arr,int low,int high){
+    public static void sort(int [] arr,int low,int high){
         if(low>=high){
-            return arr;}
+            return ;}
         int pos=position(arr,low,high);
         sort(arr,low,pos-1);
         sort(arr,pos+1,high);
-        return arr;
     }
     public static int position(int [] arr,int low,int high){
         int i=low;
@@ -60,8 +65,8 @@ public class QuickSort {
 
     public static void main(String[] args) {
         int [] arr=new int[]{9,8,5,6,8,9,1,2,4,3,10};
-        int [] res=sort(arr,0,arr.length-1);
-        for(int i:res){
+        sort(arr,0,arr.length-1);
+        for(int i:arr){
             System.out.println(i);
         }
     }

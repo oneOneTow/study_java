@@ -14,6 +14,7 @@
         <module>java8_feature</module>
         <module>java_set</module>
         <module>java_sort</module>
+        <module>java_code</module>
     </modules>
 
 
