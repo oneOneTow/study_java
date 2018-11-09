@@ -16,6 +16,7 @@
         <module>java_sort</module>
         <module>java_code</module>
         <module>Idea_test</module>
+        <module>java_map</module>
     </modules>
 
 

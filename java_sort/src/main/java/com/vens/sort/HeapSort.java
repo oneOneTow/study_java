@@ -13,6 +13,7 @@ public class HeapSort {
      * 1.构建初始堆，就是要将待排序序列构成一个大根堆
      * 2.交换元素
      * 3.调整堆
+     * 稳定性：不稳定
      */
     public static  void sort(Integer[] arr) {
         int len = arr.length - 1;
