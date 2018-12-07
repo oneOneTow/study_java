@@ -21,10 +21,12 @@ public class ProxyFactoryCglib implements MethodInterceptor {
         //回调方法
         enhancer.setCallback(this);
         //创建代理对象
+        enhancer.setInterceptDuringConstruction(true);
         return enhancer.create();
     }
 
 
+    @Override
     public Object intercept(Object o,
                             Method method,
                             Object[] objects,

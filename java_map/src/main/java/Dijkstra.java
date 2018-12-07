@@ -23,7 +23,6 @@ public class Dijkstra {
                 dis[j]=dis[j]>len?dis[j]:len;
             }
         }
-
     }
     public void init(int n){
         for(int i=0;i<this.v.length;i++){

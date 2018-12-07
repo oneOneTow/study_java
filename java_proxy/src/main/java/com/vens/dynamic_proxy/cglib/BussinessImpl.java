@@ -6,8 +6,18 @@ package com.vens.dynamic_proxy.cglib;
  * @date 2018/9/26
  */
 public class BussinessImpl {
-    public String sayHello(String name) {
-        System.out.println("hello " + name);
+    private String name;
+
+    public String sayHello() {
+        System.out.println("hello " + this.name);
         return "ok";
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
