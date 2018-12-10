@@ -17,6 +17,8 @@
         <module>java_code</module>
         <module>Idea_test</module>
         <module>java_map</module>
+        <module>java_thread</module>
+        <module>study_singleton</module>
     </modules>
 
 
