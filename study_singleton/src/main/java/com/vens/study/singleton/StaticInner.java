@@ -3,6 +3,7 @@ package com.vens.study.singleton;
 /**
  * @author LuZhiqing
  * @Description:
+ * อฦผ๖สนำร
  * @date 2018/12/10
  */
 public class StaticInner {
