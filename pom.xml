@@ -19,7 +19,12 @@
         <module>java_map</module>
         <module>java_thread</module>
         <module>study_singleton</module>
+        <module>mysql_locak</module>
+        <module>mysql_lock_work1</module>
     </modules>
+
+
+
 
 
 </project>
