@@ -22,6 +22,8 @@
         <module>mysql_locak</module>
         <module>mysql_lock_work1</module>
         <module>redis_redisson</module>
+        <module>design-pattern</module>
+        <module>design-pattern</module>
     </modules>
 
 

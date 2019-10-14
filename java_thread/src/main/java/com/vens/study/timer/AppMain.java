@@ -1,7 +1,10 @@
 package com.vens.study.timer;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author LuZhiqing
@@ -10,15 +13,25 @@ import java.util.TimerTask;
  */
 public class AppMain {
     public static void main(String[] args) {
-        //timerÊÇÍ¨¹ýµ¥Ïß³ÌÀ´Ö´ÐÐÈÎÎñ£¬Èç¹ûÒ»¸ötaskÖ´ÐÐÊ±¼ä¹ý³¤¾Í»áÓ°ÏìÆäËûÏß³ÌµÄÊ±Ð§ÐÔ
-        //timer²»²¶»ñÒì³££¬µ±Ò»¸ötask³öÏÖÒì³££¬ÆäËûÎ´Ö´ÐÐµÄtask½«²»»á±»Ö´ÐÐ
-        //timerÊÇ»ùÓÚ¾ø¶ÔÊ±¼äµÄ
-        Timer timer=new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                System.out.println("time");
-            }
-        },100000000);
+//        //timerï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½taskÖ´ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ìµï¿½Ê±Ð§ï¿½ï¿½
+//        //timerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½taskï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´Ö´ï¿½Ðµï¿½taskï¿½ï¿½ï¿½ï¿½ï¿½á±»Ö´ï¿½ï¿½
+//        //timerï¿½Ç»ï¿½ï¿½Ú¾ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½
+//        Timer timer=new Timer();
+//        timer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                System.out.println("time");
+//            }
+//        },100000000);
+        List<test> ts = new ArrayList<>();
+        ts.add(new test());
+        List<test> ts1 = ts;
+        test t2 = new test();
+        t2.a="sdfsdfsdf";
+        ts1.set(0,t2);
     }
+
+}
+class test{
+    public String a = "sdf";
 }
