@@ -24,6 +24,8 @@
         <module>redis_redisson</module>
         <module>design-pattern</module>
         <module>design-pattern</module>
+        <module>files</module>
+        <module>mongo</module>
     </modules>
 
 
